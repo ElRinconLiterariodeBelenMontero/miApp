@@ -11,7 +11,7 @@ public class MiAppController {
     // Endpoint para obtener un mensaje simple
     @GetMapping("/mensaje")
     public String obtenerMensaje() {
-        return "¡Hola desde el controlador de Spring Boot!";
+        return "¡Hola Belen. Esto ya es una pagina web!";
     }
 }
 
