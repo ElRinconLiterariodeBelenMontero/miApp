@@ -1,5 +1,12 @@
 HELP.md
+
+# Ignorar todo el directorio target
 target/
+
+# Permitir que el archivo JAR generado en target se suba a GitHub
+!target/miapp-0.0.1-SNAPSHOT.jar
+
+# Ignorar archivos que no son necesarios para el control de versiones
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
@@ -31,3 +38,4 @@ build/
 
 ### VS Code ###
 .vscode/
+
