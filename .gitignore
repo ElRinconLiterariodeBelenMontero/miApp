@@ -2,7 +2,7 @@
 target/
 
 # Permitir que la carpeta tarjet no sea ignorada
-!tarjet/
+!target/
 
 # Permitir que el archivo JAR generado en target se suba a GitHub
 !target/miapp-0.0.1-SNAPSHOT.jar
