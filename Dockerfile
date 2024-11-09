@@ -1,15 +1,16 @@
-# Usar una imagen base de OpenJDK (la más común para aplicaciones Java)
-FROM openjdk:17-jdk-slim
+# Usar una imagen base de OpenJDK
+FROM openjdk:23-jdk-slim
 
 # Establecer el directorio de trabajo en el contenedor
 WORKDIR /app
 
 # Copiar el archivo JAR de tu proyecto a la carpeta /app dentro del contenedor
-COPY target/miApp.jar /app/miApp.jar
+COPY target/miapp-0.0.1-SNAPSHOT.jar /app/miApp.jar
 
 # Exponer el puerto donde tu aplicación estará disponible (ajústalo si es necesario)
 EXPOSE 8080
 
-# Comando para ejecutar la aplicación Java (ajusta el nombre del archivo JAR)
+# Comando para ejecutar la aplicación Java
 CMD ["java", "-jar", "miApp.jar"]
+
 
